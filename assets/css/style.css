@@ -1,0 +1,320 @@
+/**
+ * Main stylesheet for Employee Attendance & Salary System
+ */
+
+:root {
+    /* Main color scheme */
+    --primary-color: #4e73df;
+    --primary-dark: #2e59d9;
+    --primary-light: #6f8be8;
+    --secondary-color: #5a5c69;
+    --success-color: #1cc88a;
+    --info-color: #36b9cc;
+    --warning-color: #f6c23e;
+    --danger-color: #e74a3b;
+    --light-color: #f8f9fc;
+    --dark-color: #5a5c69;
+    
+    /* Text colors */
+    --text-primary: #333333;
+    --text-secondary: #6c757d;
+    --text-light: #f8f9fc;
+    
+    /* Background colors */
+    --bg-light: #f8f9fc;
+    --bg-white: #ffffff;
+    --bg-gradient: linear-gradient(180deg, var(--primary-color) 10%, var(--primary-dark) 100%);
+    
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 3rem;
+    
+    /* Border radius */
+    --border-radius-sm: 0.25rem;
+    --border-radius-md: 0.5rem;
+    --border-radius-lg: 1rem;
+    
+    /* Shadows */
+    --shadow-sm: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    --shadow-md: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+}
+
+/* General styles */
+body {
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Override Bootstrap primary color */
+.bg-primary {
+    background-color: var(--primary-color) !important;
+    background-image: var(--bg-gradient);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 56px; /* Navbar height */
+    bottom: 0;
+    left: 0;
+    padding: 0;
+    box-shadow: var(--shadow-sm);
+    background-color: var(--bg-white);
+    z-index: 100;
+    overflow-y: auto;
+    transition: all 0.3s;
+}
+
+.sidebar .nav-link {
+    color: var(--text-secondary);
+    border-radius: 0;
+    padding: 0.75rem 1.25rem;
+    transition: all 0.2s;
+}
+
+.sidebar .nav-link:hover {
+    color: var(--primary-color);
+    background-color: rgba(78, 115, 223, 0.1);
+}
+
+.sidebar .nav-link.active {
+    color: var(--primary-color);
+    background-color: rgba(78, 115, 223, 0.2);
+    font-weight: 600;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* Main content area */
+.main-content {
+    min-height: calc(100vh - 56px - 56px); /* 100vh - navbar - footer */
+}
+
+/* User avatar styles */
+.avatar-circle {
+    width: 60px;
+    height: 60px;
+    background-color: var(--primary-color);
+    background-image: var(--bg-gradient);
+    border-radius: 50%;
+    color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.avatar-sm {
+    width: 40px;
+    height: 40px;
+    font-size: 1rem;
+}
+
+.avatar-xs {
+    width: 30px;
+    height: 30px;
+    font-size: 0.8rem;
+}
+
+/* Card styles */
+.card {
+    border: none;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    padding: 0.75rem 1.25rem;
+}
+
+/* Status badges */
+.badge {
+    padding: 0.35em 0.65em;
+    font-size: 0.75em;
+    border-radius: 50rem;
+}
+
+.badge-success {
+    background-color: #e6fff0;
+    color: #00a36a;
+}
+
+.badge-warning {
+    background-color: #fff9e6;
+    color: #cc9900;
+}
+
+.badge-danger {
+    background-color: #ffebeb;
+    color: #cc0000;
+}
+
+.badge-info {
+    background-color: #e6f9ff;
+    color: #0099cc;
+}
+
+.badge-orange {
+    background-color: #fff0e6;
+    color: #cc6600;
+}
+
+.badge-secondary {
+    background-color: #f0f0f0;
+    color: #666666;
+}
+
+/* Dashboard stat cards */
+.stat-card {
+    border-left: 0.25rem solid var(--primary-color);
+    border-radius: var(--border-radius-md);
+}
+
+.stat-card.primary {
+    border-left-color: var(--primary-color);
+}
+
+.stat-card.success {
+    border-left-color: var(--success-color);
+}
+
+.stat-card.info {
+    border-left-color: var(--info-color);
+}
+
+.stat-card.warning {
+    border-left-color: var(--warning-color);
+}
+
+.stat-card.danger {
+    border-left-color: var(--danger-color);
+}
+
+.stat-card .stat-icon {
+    font-size: 2rem;
+    opacity: 0.3;
+}
+
+/* Login & Register pages */
+.auth-container {
+    max-width: 900px;
+    margin: 5% auto;
+}
+
+.auth-card {
+    border: none;
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.auth-sidebar {
+    background: var(--bg-gradient);
+    color: white;
+    padding: 3rem 2rem;
+}
+
+.auth-sidebar h2 {
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.auth-content {
+    padding: 3rem 2rem;
+}
+
+/* Custom form styles */
+.form-control:focus {
+    border-color: var(--primary-light);
+    box-shadow: 0 0 0 0.25rem rgba(78, 115, 223, 0.25);
+}
+
+.form-floating > label {
+    color: var(--text-secondary);
+}
+
+/* Tooltips */
+.tippy-box {
+    background-color: var(--dark-color);
+    border-radius: var(--border-radius-sm);
+    font-size: 0.875rem;
+}
+
+.tippy-arrow {
+    color: var(--dark-color);
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) { 
+    .main-content {
+        margin-left: 0 !important;
+    }
+}
+
+/* Animation effects */
+.fade-in {
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Print styles */
+@media print {
+    .sidebar, .navbar, .footer, .no-print {
+        display: none !important;
+    }
+    
+    .main-content {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #dee2e6 !important;
+    }
+    
+    body {
+        background-color: white !important;
+    }
+}

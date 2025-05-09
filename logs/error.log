@@ -1,0 +1,74 @@
+[05-May-2025 13:40:27 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'last_login' in 'field list' in E:\MAMP\htdocs\emp\includes\db_functions.php:90
+Stack trace:
+#0 E:\MAMP\htdocs\emp\includes\db_functions.php(90): mysqli->prepare('UPDATE users SE...')
+#1 E:\MAMP\htdocs\emp\includes\db_functions.php(244): db_prepare_execute('UPDATE users SE...', 'i', Array)
+#2 E:\MAMP\htdocs\emp\includes\auth_functions.php(292): db_update('UPDATE users SE...', 'i', Array, Array)
+#3 E:\MAMP\htdocs\emp\includes\auth_functions.php(47): update_last_login(2)
+#4 E:\MAMP\htdocs\emp\pages\login.php(25): login_user('mohan', 'password ')
+#5 E:\MAMP\htdocs\emp\index.php(49): include('E:\\MAMP\\htdocs\\...')
+#6 {main}
+  thrown in E:\MAMP\htdocs\emp\includes\db_functions.php on line 90
+[05-May-2025 13:40:45 Asia/Kolkata] PHP Parse error:  syntax error, unexpected token "??", expecting "->" or "?->" or "{" or "[" in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:41:06 Asia/Kolkata] PHP Parse error:  syntax error, unexpected token "??", expecting "->" or "?->" or "{" or "[" in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:42:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:43:08 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:43:09 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:45:02 Asia/Kolkata] PHP Parse error:  syntax error, unexpected token "??", expecting "->" or "?->" or "{" or "[" in E:\MAMP\htdocs\emp\pages\dashboard.php on line 394
+[05-May-2025 13:46:17 Asia/Kolkata] PHP Warning:  require_once(auth.php): Failed to open stream: No such file or directory in E:\MAMP\htdocs\emp\pages\dashboard.php on line 5
+[05-May-2025 13:46:17 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Failed opening required 'auth.php' (include_path='.;C:\php\pear') in E:\MAMP\htdocs\emp\pages\dashboard.php:5
+Stack trace:
+#0 E:\MAMP\htdocs\emp\index.php(49): include()
+#1 {main}
+  thrown in E:\MAMP\htdocs\emp\pages\dashboard.php on line 5
+[05-May-2025 13:50:18 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 13:53:52 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 13:54:00 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 13:55:50 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'last_login' in 'field list' in E:\MAMP\htdocs\emp\includes\db_functions.php:90
+Stack trace:
+#0 E:\MAMP\htdocs\emp\includes\db_functions.php(90): mysqli->prepare('UPDATE users SE...')
+#1 E:\MAMP\htdocs\emp\includes\db_functions.php(244): db_prepare_execute('UPDATE users SE...', 'i', Array)
+#2 E:\MAMP\htdocs\emp\includes\auth_functions.php(292): db_update('UPDATE users SE...', 'i', Array, Array)
+#3 E:\MAMP\htdocs\emp\includes\auth_functions.php(47): update_last_login(2)
+#4 E:\MAMP\htdocs\emp\pages\login.php(25): login_user('mohan', 'password ')
+#5 E:\MAMP\htdocs\emp\index.php(49): include('E:\\MAMP\\htdocs\\...')
+#6 {main}
+  thrown in E:\MAMP\htdocs\emp\includes\db_functions.php on line 90
+[05-May-2025 14:04:11 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 14:04:15 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 14:05:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 14:05:38 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1312
+[05-May-2025 14:05:39 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1312
+[05-May-2025 14:05:56 Asia/Kolkata] PHP Parse error:  syntax error, unexpected string content "", expecting "-" or identifier or variable or number in E:\MAMP\htdocs\emp\pages\reports.php on line 1347
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $total_basic in E:\MAMP\htdocs\emp\pages\reports.php on line 1238
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $total_bonus in E:\MAMP\htdocs\emp\pages\reports.php on line 1240
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $total_deductions in E:\MAMP\htdocs\emp\pages\reports.php on line 1241
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $active_count in E:\MAMP\htdocs\emp\pages\reports.php on line 1275
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $inactive_count in E:\MAMP\htdocs\emp\pages\reports.php on line 1276
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $on_leave_count in E:\MAMP\htdocs\emp\pages\reports.php on line 1277
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $terminated_count in E:\MAMP\htdocs\emp\pages\reports.php on line 1278
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $attendance_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1311
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $attendance_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1312
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1312
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $attendance_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1313
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1313
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $attendance_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1314
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1314
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $attendance_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1315
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1315
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $salary_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1347
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1347
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $salary_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1348
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1348
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $salary_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1349
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1349
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Undefined variable $salary_stats in E:\MAMP\htdocs\emp\pages\reports.php on line 1350
+[05-May-2025 14:06:10 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in E:\MAMP\htdocs\emp\pages\reports.php on line 1350
+[09-May-2025 15:35:08 Asia/Kolkata] PHP Fatal error:  Uncaught mysqli_sql_exception: Unknown column 'present_days' in 'field list' in E:\MAMP\htdocs\emp\includes\db_functions.php:90
+Stack trace:
+#0 E:\MAMP\htdocs\emp\includes\db_functions.php(90): mysqli->prepare('INSERT INTO sal...')
+#1 E:\MAMP\htdocs\emp\includes\db_functions.php(220): db_prepare_execute('INSERT INTO sal...', 'iiidddddsiiiiii', Array)
+#2 E:\MAMP\htdocs\emp\pages\salary.php(160): db_insert('INSERT INTO sal...', 'iiidddddsiiiiii', Array, Array)
+#3 E:\MAMP\htdocs\emp\index.php(49): include('E:\\MAMP\\htdocs\\...')
+#4 {main}
+  thrown in E:\MAMP\htdocs\emp\includes\db_functions.php on line 90
